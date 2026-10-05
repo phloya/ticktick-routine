@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="412" viewBox="0 0 1200 412" role="img" aria-labelledby="title desc">
+  <title id="title">Одна карта на все агенты</title>
+  <desc id="desc">Claude Code, Codex, OpenCode и claude.ai читают одну карту аккаунта и работают с TickTick через официальный MCP-сервер.</desc>
+  <defs><pattern id="busy" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#EEF0F5"/><rect width="3" height="8" fill="#C9CFDC"/></pattern></defs>
+  <rect width="1200" height="412" rx="28" fill="#F6F7FB"/>
+<rect x="48" y="44" width="300" height="66" rx="16" fill="#FFFFFF" stroke="#E2E6EF" stroke-width="2"/>
+<text x="70" y="73" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="22" font-weight="700" fill="#172033" text-anchor="start">Claude Code</text>
+<text x="70" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="16" font-weight="400" fill="#5F6880" text-anchor="start">~/.claude/skills</text>
+<rect x="48" y="128" width="300" height="66" rx="16" fill="#FFFFFF" stroke="#E2E6EF" stroke-width="2"/>
+<text x="70" y="157" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="22" font-weight="700" fill="#172033" text-anchor="start">Codex</text>
+<text x="70" y="182" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="16" font-weight="400" fill="#5F6880" text-anchor="start">~/.codex/skills</text>
+<rect x="48" y="212" width="300" height="66" rx="16" fill="#FFFFFF" stroke="#E2E6EF" stroke-width="2"/>
+<text x="70" y="241" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="22" font-weight="700" fill="#172033" text-anchor="start">OpenCode</text>
+<text x="70" y="266" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="16" font-weight="400" fill="#5F6880" text-anchor="start">читает ~/.claude/skills</text>
+<rect x="48" y="296" width="300" height="66" rx="16" fill="#FFFFFF" stroke="#E2E6EF" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="70" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="22" font-weight="700" fill="#172033" text-anchor="start">claude.ai</text>
+<text x="70" y="350" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="16" font-weight="400" fill="#5F6880" text-anchor="start">архив .skill + карта</text>
+<path d="M348 77.0 C398 77.0 370 210.0 420 210.0" fill="none" stroke="#C9CFDC" stroke-width="2"/>
+<path d="M348 161.0 C398 161.0 370 210.0 420 210.0" fill="none" stroke="#C9CFDC" stroke-width="2"/>
+<path d="M348 245.0 C398 245.0 370 210.0 420 210.0" fill="none" stroke="#C9CFDC" stroke-width="2"/>
+<path d="M348 329.0 C398 329.0 370 210.0 420 210.0" fill="none" stroke="#C9CFDC" stroke-width="2"/>
+<text x="384.0" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="18" font-weight="500" fill="#5F6880" text-anchor="middle">читают карту</text>
+<rect x="420" y="92" width="330" height="236" rx="20" fill="#FFFFFF" stroke="#4772FA" stroke-width="2.5"/>
+<text x="444" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="16" font-weight="400" fill="#5F6880" text-anchor="start">~/.config/ticktick-routine/</text>
+<text x="444" y="162" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="28" font-weight="700" fill="#172033" text-anchor="start">map.md</text>
+<circle cx="454" cy="194" r="8" fill="#4772FA"/><path d="M450.7 194.1 l2.3 2.3 l4.4 -4.7" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="472" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="19" font-weight="400" fill="#172033" text-anchor="start">списки и колонки</text>
+<circle cx="454" cy="224" r="8" fill="#4772FA"/><path d="M450.7 224.1 l2.3 2.3 l4.4 -4.7" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="472" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="19" font-weight="400" fill="#172033" text-anchor="start">удобное время, ритм дня</text>
+<circle cx="454" cy="254" r="8" fill="#4772FA"/><path d="M450.7 254.1 l2.3 2.3 l4.4 -4.7" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="472" y="260" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="19" font-weight="400" fill="#172033" text-anchor="start">куда что класть</text>
+<circle cx="454" cy="284" r="8" fill="#4772FA"/><path d="M450.7 284.1 l2.3 2.3 l4.4 -4.7" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="472" y="290" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="19" font-weight="400" fill="#172033" text-anchor="start">секретные списки</text>
+<text x="585.0" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="400" fill="#5F6880" text-anchor="middle">создаётся при первом запуске</text>
+<path d="M750 210.0 L852 210.0" stroke="#4772FA" stroke-width="2.5" fill="none"/>
+<path d="M842 203.0 l10 7 l-10 7" stroke="#4772FA" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="801.0" y="196.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="500" fill="#5F6880" text-anchor="middle">через MCP</text>
+<rect x="852" y="92" width="300" height="104" rx="18" fill="#4772FA"/>
+<text x="876" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="23" font-weight="700" fill="#FFFFFF" text-anchor="start">TickTick MCP</text>
+<text x="876" y="162" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="17" font-weight="400" fill="#FFFFFF" text-anchor="start">mcp.ticktick.com</text>
+<text x="876" y="184" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="16" font-weight="400" fill="#DCE5FF" text-anchor="start">OAuth</text>
+<path d="M1002.0 196 L1002.0 224" stroke="#4772FA" stroke-width="2.5"/>
+<rect x="852" y="224" width="300" height="104" rx="18" fill="#FFFFFF" stroke="#E2E6EF" stroke-width="2"/>
+<text x="876" y="266" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="22" font-weight="700" fill="#172033" text-anchor="start">Твой TickTick</text>
+<text x="876" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="18" font-weight="400" fill="#5F6880" text-anchor="start">списки · задачи · привычки</text>
+</svg>

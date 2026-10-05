@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ticktick-routine",
+  "description": "TickTick Routine — a TickTick planning skill for Claude Code",
+  "owner": {
+    "name": "Daler Khamidov",
+    "url": "https://github.com/phloya"
+  },
+  "plugins": [
+    {
+      "name": "ticktick-routine",
+      "description": "Turns links, courses and chores into time-blocked TickTick plans via the official TickTick MCP.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/phloya/ticktick-routine"
+    }
+  ]
+}

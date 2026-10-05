@@ -1,0 +1,13 @@
+{
+  "name": "ticktick-routine",
+  "version": "1.0.0",
+  "description": "TickTick assistant: turns links, courses and chores into time-blocked TickTick plans. Asks the deadline and a convenient time, checks your schedule, reviews the week.",
+  "author": {
+    "name": "Daler Khamidov",
+    "url": "https://github.com/phloya"
+  },
+  "homepage": "https://github.com/phloya/ticktick-routine",
+  "repository": "https://github.com/phloya/ticktick-routine",
+  "license": "MIT",
+  "keywords": ["ticktick", "tasks", "planning", "productivity", "mcp", "skill"]
+}

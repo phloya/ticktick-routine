@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">ticktick-routine — скилл, который превращает ссылки и дела в план TickTick</title>
+  <desc id="desc">Слева название и обещание; справа сообщение со ссылкой на курс, два ответа на вопросы скилла и неделя с новыми занятиями, поставленными в обход занятого времени.</desc>
+  <defs><pattern id="busy" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#EEF0F5"/><rect width="3" height="8" fill="#C9CFDC"/></pattern></defs>
+  <rect width="1200" height="420" rx="28" fill="#F6F7FB"/>
+<g id="title-block" transform="translate(64 0)">
+<text x="0" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="600" fill="#4772FA" text-anchor="start" letter-spacing="1.5">AGENT SKILL  ·  TICKTICK MCP</text>
+<text x="0" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="58" font-weight="700" fill="#172033" text-anchor="start" letter-spacing="-1">ticktick-routine</text>
+<text x="0" y="214" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="33" font-weight="600" fill="#172033" text-anchor="start">Скинул ссылку или дело —</text>
+<text x="0" y="254" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="33" font-weight="600" fill="#4772FA" text-anchor="start">получил план в TickTick</text>
+<text x="0" y="302" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="20" font-weight="400" fill="#5F6880" text-anchor="start">Спросит срок и удобное время, обойдёт занятые</text>
+<text x="0" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="20" font-weight="400" fill="#5F6880" text-anchor="start">часы и разложит по нужным спискам и колонкам.</text>
+<rect x="0" y="352" width="133" height="34" rx="17" fill="#FFFFFF" stroke="#E2E6EF" stroke-width="2"/>
+<text x="66.5" y="375" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="500" fill="#5F6880" text-anchor="middle">Claude Code</text>
+<rect x="143" y="352" width="77" height="34" rx="17" fill="#FFFFFF" stroke="#E2E6EF" stroke-width="2"/>
+<text x="181.5" y="375" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="500" fill="#5F6880" text-anchor="middle">Codex</text>
+<rect x="230" y="352" width="105" height="34" rx="17" fill="#FFFFFF" stroke="#E2E6EF" stroke-width="2"/>
+<text x="282.5" y="375" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="500" fill="#5F6880" text-anchor="middle">OpenCode</text>
+<rect x="345" y="352" width="114" height="34" rx="17" fill="#FFFFFF" stroke="#E2E6EF" stroke-width="2"/>
+<text x="402.0" y="375" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="500" fill="#5F6880" text-anchor="middle">claude.ai</text>
+</g>
+<g id="proof" transform="translate(640 36)">
+<rect width="500" height="348" rx="22" fill="#FFFFFF" stroke="#E2E6EF" stroke-width="2"/>
+<rect x="176" y="22" width="300" height="48" rx="20" fill="#E8EEFF"/>
+<text x="326.0" y="53" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="20" fill="#172033" text-anchor="middle"><tspan font-weight="700" fill="#4772FA">sqlbolt.com</tspan> — на учёбу</text>
+<rect x="24" y="88" width="220" height="44" rx="22" fill="#FFFFFF" stroke="#4772FA" stroke-width="2"/>
+<circle cx="48" cy="110" r="11" fill="#4772FA"/><path d="M43.4 110.2 l3.2 3.2 l6.0 -6.4" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="68" y="117" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="18" fill="#5F6880">Срок <tspan fill="#172033" font-weight="600">до сб 31.10</tspan></text>
+<rect x="256" y="88" width="220" height="44" rx="22" fill="#FFFFFF" stroke="#4772FA" stroke-width="2"/>
+<circle cx="280" cy="110" r="11" fill="#4772FA"/><path d="M275.4 110.2 l3.2 3.2 l6.0 -6.4" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="300" y="117" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="18" fill="#5F6880">Время <tspan fill="#172033" font-weight="600">11:00–12:30</tspan></text>
+<text x="99.0" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="18" font-weight="600" fill="#5F6880" text-anchor="middle">пн</text>
+<text x="157.0" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="18" font-weight="600" fill="#5F6880" text-anchor="middle">вт</text>
+<text x="215.0" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="18" font-weight="600" fill="#5F6880" text-anchor="middle">ср</text>
+<text x="273.0" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="18" font-weight="600" fill="#5F6880" text-anchor="middle">чт</text>
+<text x="331.0" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="18" font-weight="600" fill="#5F6880" text-anchor="middle">пт</text>
+<text x="389.0" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="18" font-weight="600" fill="#5F6880" text-anchor="middle">сб</text>
+<text x="447.0" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="18" font-weight="600" fill="#5F6880" text-anchor="middle">вс</text>
+<line x1="70" y1="192.0" x2="476" y2="192.0" stroke="#E2E6EF" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="60" y="198.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="16" font-weight="400" fill="#5F6880" text-anchor="end">11:00</text>
+<line x1="70" y1="244.0" x2="476" y2="244.0" stroke="#E2E6EF" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="60" y="250.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="16" font-weight="400" fill="#5F6880" text-anchor="end">13:00</text>
+<line x1="70" y1="296.0" x2="476" y2="296.0" stroke="#E2E6EF" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="60" y="302.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="16" font-weight="400" fill="#5F6880" text-anchor="end">15:00</text>
+<rect x="132" y="194.0" width="50" height="35.0" rx="8" fill="url(#busy)"/>
+<rect x="364" y="194.0" width="50" height="35.0" rx="8" fill="url(#busy)"/>
+<rect x="190" y="246.0" width="50" height="22.0" rx="8" fill="url(#busy)"/>
+<rect x="74" y="194.0" width="50" height="35.0" rx="8" fill="#4772FA"/><text x="99.0" y="217.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">SQL</text>
+<rect x="248" y="194.0" width="50" height="35.0" rx="8" fill="#4772FA"/><text x="273.0" y="217.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">SQL</text>
+<rect x="70" y="304" width="18" height="18" rx="5" fill="#4772FA"/>
+<text x="98" y="318" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="400" fill="#5F6880" text-anchor="start">новые занятия</text>
+<rect x="254.8" y="304" width="18" height="18" rx="5" fill="url(#busy)"/>
+<text x="282.8" y="318" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="400" fill="#5F6880" text-anchor="start">уже занято</text>
+</g>
+</svg>

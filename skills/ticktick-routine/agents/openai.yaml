@@ -1,0 +1,17 @@
+interface:
+  display_name: "TickTick Routine"
+  short_description: "Turn links, courses and chores into TickTick plans"
+  icon_small: "./assets/icon.svg"
+  brand_color: "#4772FA"
+  default_prompt: "Use $ticktick-routine to file this link into my TickTick with a deadline and a time slot."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "ticktick"
+      description: "Official TickTick MCP server (OAuth)"
+      transport: "streamable_http"
+      url: "https://mcp.ticktick.com/"
+
+policy:
+  allow_implicit_invocation: true

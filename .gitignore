@@ -1,0 +1,7 @@
+# Built archives (may contain your personal map)
+dist/
+# A personal map must never be committed — it belongs in ~/.config/ticktick-routine/map.md
+skills/ticktick-routine/references/ticktick-map.md
+__pycache__/
+*.pyc
+.DS_Store
