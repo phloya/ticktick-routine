@@ -1,9 +1,10 @@
 <p align="center">
-  <b>Русский</b> · <a href="README.en.md">English</a>
+  <a href="README.md"><img alt="English (current)" src="https://img.shields.io/badge/README-English-4772FA?style=for-the-badge"></a>
+  <a href="README.ru.md"><img alt="Читать на русском" src="https://img.shields.io/badge/README-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-8A93A6?style=for-the-badge"></a>
 </p>
 
 <p align="center">
-  <img src="./assets/readme/hero.svg" width="100%" alt="ticktick-routine: скинул ссылку или дело — получил план в TickTick. Пример справа: ссылка на курс, выбранные срок и время и неделя, где новые занятия стоят в обход занятого времени.">
+  <img src="./assets/readme/en/hero.svg" width="100%" alt="ticktick-routine: drop a link or a chore, get a plan in TickTick. Example on the right: a course link, the chosen deadline and time, and a week where new sessions sit around busy time.">
 </p>
 
 <p align="center">
@@ -14,72 +15,72 @@
   <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-5F6880">
 </p>
 
-**ticktick-routine** — скилл для AI-агента, который разбирает всё, что ты ему кидаешь: полезные ссылки, курсы, статьи, видео, книги, бытовые дела, покупки. Он спрашивает, что с этим сделать, к какому сроку и во сколько тебе удобнее, смотрит, чем уже занята неделя, и раскладывает задачи по твоим спискам TickTick блоками времени.
+**ticktick-routine** is an AI-agent skill that sorts out whatever you throw at it: useful links, courses, articles, videos, books, chores, things to buy. It asks what to do with each item, by when and at what time it suits you, looks at what your week already holds, and files the tasks into your TickTick lists as time blocks.
 
-Работает в **Claude Code**, **Codex**, **OpenCode** и в чате **claude.ai** — через официальный TickTick MCP.
+It works in **Claude Code**, **Codex**, **OpenCode** and **claude.ai** chat, through the official TickTick MCP.
 
-## Как это выглядит
+## What it looks like
 
-Пишешь агенту одну строку:
+You send your agent one line:
 
-> вот нашёл курс по sql https://sqlbolt.com/ хочу пройти, это на обучение
+> found an sql course https://sqlbolt.com/ want to go through it, it's for learning
 
-Скилл открывает ссылку, находит в TickTick старую карточку «SQL» и спрашивает:
+The skill opens the link, finds an old «SQL» card in your TickTick and asks:
 
 ```text
-🔗 SQLBolt — интерактивный курс по SQL: 18 уроков + 2 доп. темы, ~4–5 ч. Похоже на учёбу.
-В «Учёба → Очередь» уже есть твоя карточка «SQL» — сделаю курс её планом, а не новой задачей.
+🔗 SQLBolt — interactive SQL course: 18 lessons + 2 extra topics, ~4–5 h. Looks like learning.
+There is already an «SQL» card in Learning → Queue — I'll make the course its plan instead of a new task.
 
-1. Что делаем?   План до срока (Recommended) · Одна задача · В очередь · Не нужно
-2. Какой срок?   До вс 18.10 · До вс 11.10 · До сб 31.10 · Без срока
-3. Во сколько?   11:00–12:30 (учебное окно) · 13:00–14:30 · Вечером 20:00 · Без времени
+1. What to do?   Plan to a deadline (Recommended) · One task · Queue it · Skip
+2. Deadline?     By Sun Oct 18 · By Sun Oct 11 · By Sat Oct 31 · No deadline
+3. What time?    11:00–12:30 (study window) · 13:00–14:30 · Evening 20:00 · No fixed time
 ```
 
-Отвечаешь «план, до конца октября, днём с 11» — и до создания задач видишь план:
+You answer “plan, end of October, daytime from 11”, and it shows the plan before creating anything:
 
-| Когда | Что |
+| When | What |
 |---|---|
-| пн 12.10, 11:00–12:30 | Введение + уроки 1–4: SELECT, WHERE, сортировка |
-| чт 15.10, 11:00–12:30 | Уроки 5–8: JOIN, OUTER JOIN, NULL |
-| пн 19.10, 11:00–12:30 | Уроки 9–12: выражения, агрегаты, GROUP BY |
-| чт 22.10, 11:00–12:30 | Уроки 13–18: INSERT, UPDATE, DELETE, таблицы |
-| пн 26.10, 11:00–12:30 | Подзапросы, UNION и повторение |
+| Mon Oct 12, 11:00–12:30 | Intro + lessons 1–4: SELECT, WHERE, sorting |
+| Thu Oct 15, 11:00–12:30 | Lessons 5–8: JOIN, OUTER JOIN, NULL |
+| Mon Oct 19, 11:00–12:30 | Lessons 9–12: expressions, aggregates, GROUP BY |
+| Thu Oct 22, 11:00–12:30 | Lessons 13–18: INSERT, UPDATE, DELETE, tables |
+| Mon Oct 26, 11:00–12:30 | Subqueries, UNION and review |
 
-До 11.10 в календаре идёт план по Python, поэтому SQL начинается после него, а 27–31.10 оставлены запасом. После «да» появляется задача с дедлайном и пять подзадач с напоминаниями.
+A Python plan already runs until Oct 11, so SQL starts after it, and Oct 27–31 is kept as a buffer. After “yes” you get a task with the deadline and five subtasks with reminders.
 
-<sub>Пример — из тестового прогона на реальном аккаунте без записи в TickTick. В тех же тестах (4 сценария) скилл прошёл 41 из 41 проверки, тот же агент без скилла — 35 из 41: он не знал удобного времени, правил подтверждения и раскладки по спискам.</sub>
+<sub>The example comes from a test run on a real account with TickTick writes disabled (translated here; the skill replies in your language). In the same tests (4 scenarios) the skill passed 41 of 41 checks; the same agent without it passed 35 of 41 — it did not know the convenient hours, the confirmation rule or which list things belong in.</sub>
 
-## Что умеет
+## What it does
 
-- **Разбирает что угодно** — ссылку, файл, скриншот, надиктованный текст. Несколько дел в одном сообщении раскладывает по разным спискам: «оплатить интернет, купить фильтр, к стоматологу» → дом, покупки, здоровье.
-- **Спрашивает коротко** — 1–3 вопроса с готовыми вариантами, рекомендуемый первым. То, что уже сказано, не переспрашивает.
-- **Планирует блоками времени** — режет материал по главам, обходит занятые часы, повторяющиеся задачи и другие учебные планы, не ставит больше ~3 часов учёбы в день.
-- **Не плодит дубли** — перед созданием ищет ссылку и тему в TickTick.
-- **Пишет в твоём стиле** — списки, колонки, теги и формат заголовков берёт из твоего аккаунта.
-- **Ведёт рутину** — «что у меня на неделе?», «не успел — перенеси», недельный разбор с итогами и хвостами.
-- **Бережёт секреты** — списки, где лежат пароли, читает только по заголовкам и не тянет в запросы расписания.
+- **Takes anything** — a link, a file, a screenshot, dictated text. Several things in one message go to different lists: “pay the internet bill, buy a filter, book the dentist” → home, shopping, health.
+- **Asks briefly** — 1–3 questions with ready-made options, the recommended one first. Anything you already said is not asked again.
+- **Plans in time blocks** — splits material by chapters, works around busy hours, recurring tasks and other study plans, keeps study under ~3 hours a day.
+- **Avoids duplicates** — searches TickTick for the link and topic before creating anything.
+- **Writes in your style** — lists, columns, tags and title format come from your own account.
+- **Runs the routine** — “what's on my week?”, “didn't make it — reschedule”, a weekly review with results and leftovers.
+- **Keeps secrets out** — lists that hold passwords are read by titles only and left out of schedule queries.
 
-## Как работает
+## How it works
 
 <p align="center">
-  <img src="./assets/readme/workflow.svg" width="100%" alt="Четыре шага: скинул материал, скилл понял что это и оценил объём, задал 1–3 вопроса с вариантами, разложил задачи блоками времени по спискам.">
+  <img src="./assets/readme/en/workflow.svg" width="100%" alt="Four steps: drop material; the skill reads it and sizes the work; asks 1–3 questions with options; files time-blocked tasks into your lists.">
 </p>
 
-Скилл — это набор инструкций для агента (`SKILL.md`) плюс карта твоего аккаунта. Всё общение с TickTick идёт через официальный MCP-сервер `https://mcp.ticktick.com/` с входом через твой аккаунт TickTick. Пароли и токены скилл не хранит.
+The skill is a set of agent instructions (`SKILL.md`) plus a map of your account. All TickTick access goes through the official MCP server `https://mcp.ticktick.com/`, where you sign in with your TickTick account. The skill stores no passwords or tokens.
 
-## Установка
+## Install
 
-Три шага: поставить скилл → подключить TickTick → первый запуск.
+Three steps: install the skill → connect TickTick → first run.
 
-### 1. Поставить скилл
+### 1. Install the skill
 
-**Одной командой для всех агентов** (нужен Node.js):
+**One command for every agent** (needs Node.js):
 
 ```bash
 npx skills add phloya/ticktick-routine -g -a claude-code -a codex -a opencode
 ```
 
-**Или скриптом из репозитория:**
+**Or with the script from the repository:**
 
 ```bash
 git clone https://github.com/phloya/ticktick-routine.git
@@ -89,29 +90,29 @@ git clone https://github.com/phloya/ticktick-routine.git
 cd ticktick-routine && ./install.sh
 ```
 
-`install.sh` сам находит установленные Claude Code, Codex и OpenCode. Флаги: `--claude`, `--codex`, `--opencode`, `--claude-ai`, `--uninstall`.
+`install.sh` finds Claude Code, Codex and OpenCode on its own. Flags: `--claude`, `--codex`, `--opencode`, `--claude-ai`, `--uninstall`.
 
-**В Claude Code — как плагин:**
+**In Claude Code, as a plugin:**
 
 ```text
 /plugin marketplace add phloya/ticktick-routine
 /plugin install ticktick-routine@ticktick-routine
 ```
 
-### 2. Подключить TickTick
+### 2. Connect TickTick
 
-Нужен официальный сервер `https://mcp.ticktick.com/`. Вход — через аккаунт TickTick в браузере; ключи вручную копировать не нужно.
+Use the official server `https://mcp.ticktick.com/`. You sign in with your TickTick account in the browser; no keys to copy.
 
 <details>
 <summary><b>Claude Code</b></summary>
 
-Если TickTick уже подключён как коннектор в claude.ai (Настройки → Коннекторы), Claude Code увидит его сам. Иначе:
+If TickTick is already connected as a claude.ai connector (Settings → Connectors), Claude Code picks it up by itself. Otherwise:
 
 ```bash
 claude mcp add --transport http --scope user ticktick https://mcp.ticktick.com/
 ```
 
-Потом внутри Claude Code: `/mcp` → `ticktick` → войти.
+Then inside Claude Code: `/mcp` → `ticktick` → sign in.
 
 </details>
 
@@ -126,7 +127,7 @@ codex mcp add ticktick --url https://mcp.ticktick.com/
 codex mcp login ticktick
 ```
 
-Скилл срабатывает сам, а явно его можно позвать как `$ticktick-routine`. Карточка скилла и зависимость от TickTick MCP описаны в `agents/openai.yaml`.
+The skill triggers on its own; to call it explicitly, use `$ticktick-routine`. Its card and the TickTick MCP dependency are declared in `agents/openai.yaml`.
 
 </details>
 
@@ -141,89 +142,89 @@ opencode mcp add ticktick --url https://mcp.ticktick.com/
 opencode mcp auth ticktick
 ```
 
-OpenCode ищет скиллы в `~/.config/opencode/skills`, а также в `~/.claude/skills` и `~/.agents/skills`. Если скилл уже стоит для Claude Code, вторая копия не нужна.
+OpenCode looks for skills in `~/.config/opencode/skills`, and also in `~/.claude/skills` and `~/.agents/skills`. If the skill is already installed for Claude Code, you don't need a second copy.
 
 </details>
 
 <details>
-<summary><b>claude.ai — сайт и телефон</b></summary>
+<summary><b>claude.ai — web and mobile</b></summary>
 
-Подключи коннектор TickTick в claude.ai (Настройки → Коннекторы). Потом собери архив скилла вместе со своей картой:
+Connect the TickTick connector in claude.ai (Settings → Connectors). Then build the skill archive together with your map:
 
 ```bash
 ./install.sh --claude-ai
 ```
 
-Загрузи `dist/ticktick-routine.skill` в claude.ai: Настройки → Capabilities → Skills. В архиве лежит твоя карта, поэтому публиковать его не стоит. Без карты скилл тоже работает — проведёт настройку прямо в чате.
+Upload `dist/ticktick-routine.skill` in claude.ai: Settings → Capabilities → Skills. The archive contains your map, so don't publish it. Without a map the skill still works — it runs the setup right in the chat.
 
 </details>
 
-### 3. Первый запуск
+### 3. First run
 
-Просто кинь агенту любую ссылку. Скилл увидит, что карты ещё нет, и:
+Just send your agent any link. The skill sees there is no map yet and:
 
-1. прочитает списки, колонки, теги и привычки — только чтение;
-2. задаст 3–4 вопроса: распорядок, когда тебе легче учиться, показывать ли план перед созданием, какие списки не трогать;
-3. сохранит карту в `~/.config/ticktick-routine/map.md`.
+1. reads your lists, columns, tags and habits — read-only;
+2. asks 3–4 questions: your routine, when studying is easiest, whether to preview plans before creating them, which lists to stay out of;
+3. saves the map to `~/.config/ticktick-routine/map.md`.
 
-Дальше — обычная работа. Перенастроить: «перенастрой скилл» или «у меня новые списки».
+After that it just works. To redo it, say “reconfigure the skill” or “I have new lists”.
 
-## Одна карта на все агенты
+## One map for every agent
 
 <p align="center">
-  <img src="./assets/readme/one-map.svg" width="100%" alt="Claude Code, Codex, OpenCode и claude.ai читают одну карту ~/.config/ticktick-routine/map.md и работают с TickTick через официальный MCP-сервер.">
+  <img src="./assets/readme/en/one-map.svg" width="100%" alt="Claude Code, Codex, OpenCode and claude.ai read one map, ~/.config/ticktick-routine/map.md, and work with TickTick through the official MCP server.">
 </p>
 
-Карта — обычный Markdown: списки и их ID, колонки, удобные окна времени, правила раскладки, секретные списки. Её можно править руками, а можно сказать агенту «запомни, что учёбой удобнее вечером». Карта лежит вне папки скилла, поэтому обновления её не трогают, а все агенты на компьютере видят одну и ту же. Как она выглядит — в [ticktick-map.example.md](skills/ticktick-routine/references/ticktick-map.example.md).
+The map is plain Markdown: lists and their IDs, columns, convenient time windows, filing rules, private lists. Edit it by hand or tell the agent “remember that I study better in the evening”. It lives outside the skill folder, so updates never touch it and every agent on the machine sees the same one. See [ticktick-map.example.md](skills/ticktick-routine/references/ticktick-map.example.md) for the format.
 
-## Что ему говорить
+## What to say
 
-| Ты пишешь | Что происходит |
+| You write | What happens |
 |---|---|
-| ссылка без слов | разбор: что это, куда положить, когда заняться |
-| «на учёбу», «распиши план» + материал | план занятий до срока блоками времени |
-| «полезное» + ссылка | закладка в нужную колонку, без дублей |
-| «по быту: оплатить интернет до 10-го» | задача с датой, временем, при желании с повтором |
-| «купить …» | в список покупок |
-| «что у меня завтра / на неделе?» | обзор и свободные окна |
-| «не успел», «перенеси» | пересборка плана до дедлайна |
-| «недельный разбор» | итоги, хвосты, план на неделю |
+| a bare link | sorting: what it is, where it goes, when to do it |
+| “to learn”, “make a plan” + material | a time-blocked study plan up to the deadline |
+| “useful” + a link | a bookmark in the right column, no duplicates |
+| “chores: pay the internet bill by the 10th” | a task with a date, a time and optional repeat |
+| “buy …” | goes to the shopping list |
+| “what's on tomorrow / this week?” | an overview with free windows |
+| “didn't make it”, “reschedule” | the plan is rebuilt up to the deadline |
+| “weekly review” | results, leftovers, next week's plan |
 
-Можно надиктовывать голосом: «дик-тик» и «тик-тик» скилл понимает как TickTick.
+Voice dictation is fine: misheard spellings of TickTick are understood.
 
-## Безопасность и ограничения
+## Safety and limits
 
-- Пишет в TickTick только после твоих ответов; план из нескольких задач — только после «да». Удаляет — только по прямой просьбе.
-- Списки с секретами (например, закладки с паролями) читает только по заголовкам и не включает в запросы расписания.
-- Занятость берётся из TickTick и карты. Google Calendar и другие календари не учитываются.
-- Повторяющиеся задачи TickTick отдаёт только ближайшим вхождением — следующие скилл вычисляет сам.
-- Инструкции скилла написаны по-русски; отвечает он на языке пользователя.
+- Writes to TickTick only after you answer; a multi-task plan only after “yes”. Deletes only when you explicitly ask.
+- Lists with secrets (for example, bookmarks with passwords) are read by titles only and left out of schedule queries.
+- Busy time comes from TickTick and the map. Google Calendar and other calendars are not considered.
+- TickTick returns only the next occurrence of a recurring task; the skill works out the following ones itself.
+- The skill's instructions are written in Russian; it replies in the user's language.
 
-## Как устроен репозиторий
+## Repository layout
 
 ```text
 skills/ticktick-routine/
-├── SKILL.md                      основной сценарий
-├── agents/openai.yaml            карточка и зависимость от MCP для Codex
+├── SKILL.md                      main workflow
+├── agents/openai.yaml            Codex card and MCP dependency
 ├── references/
-│   ├── setup.md                  первый запуск: карта аккаунта
-│   ├── ticktick-map.example.md   шаблон карты
-│   ├── ticktick-api.md           шпаргалка по TickTick MCP
-│   └── routines.md               обзор, перенос, недельный разбор
-└── scripts/days.py               календарь с днями недели
-install.sh                        установка для Claude Code, Codex, OpenCode, claude.ai
-.claude-plugin/                   плагин и маркетплейс для Claude Code
-assets/readme/                    иллюстрации (исходник — source/build_svgs.py)
+│   ├── setup.md                  first run: account map
+│   ├── ticktick-map.example.md   map template
+│   ├── ticktick-api.md           TickTick MCP cheat sheet
+│   └── routines.md               overview, rescheduling, weekly review
+└── scripts/days.py               calendar with weekday names
+install.sh                        installer for Claude Code, Codex, OpenCode, claude.ai
+.claude-plugin/                   Claude Code plugin and marketplace
+assets/readme/                    illustrations (source: source/build_svgs.py)
 ```
 
-## Обновить или удалить
+## Update or remove
 
 ```bash
 npx skills update ticktick-routine
 ```
 
-Или `git pull && ./install.sh`. Удалить — `./install.sh --uninstall` или `npx skills remove ticktick-routine`. Карта в `~/.config/ticktick-routine/` остаётся; удали её руками, если она больше не нужна.
+Or `git pull && ./install.sh`. To remove: `./install.sh --uninstall` or `npx skills remove ticktick-routine`. The map in `~/.config/ticktick-routine/` stays; delete it by hand if you no longer need it.
 
-## Лицензия
+## License
 
 [MIT](LICENSE)
