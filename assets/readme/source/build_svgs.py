@@ -18,29 +18,30 @@ MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monos
 
 TEXT = {
     "ru": {
-        "hero_title": "ticktick-routine — скилл, который превращает ссылки и дела в план TickTick",
-        "hero_desc": "Слева название и обещание; справа сообщение со ссылкой на курс, два ответа на вопросы скилла и неделя с новыми занятиями, поставленными в обход занятого времени.",
-        "promise": ["Скинул ссылку или дело —", "получил план в TickTick"],
-        "sub": ["Спросит срок и удобное время, обойдёт занятые", "часы и разложит по нужным спискам и колонкам."],
-        "bubble": ("sqlbolt.com", " — на учёбу"),
+        "hero_title": "ticktick-routine — помощник, который сам разбирает дело на шаги и ставит их в твоё время в TickTick",
+        "hero_desc": "Слева название и обещание; справа короткое сообщение о курсе испанского, выбранные срок и время и неделя, где курс разбит на занятия в обход занятого времени.",
+        "promise": ["Одна строка от тебя —", "готовый план в TickTick"],
+        "sub": ["Сам разберёт материал на шаги, подберёт свободное", "время и разложит по нужным спискам."],
+        "bubble": ("курс испанского", " — на учёбу"),
+        "blocks": ["1–4", "5–8"],
         "chip1": ("Срок", "до сб 31.10"),
         "chip2": ("Время", "11:00–12:30"),
         "days": ["пн", "вт", "ср", "чт", "пт", "сб", "вс"],
         "legend_new": "новые занятия",
         "legend_busy": "уже занято",
-        "wf_title": "Как работает скилл: четыре шага",
-        "wf_desc": "Скинул материал, скилл понял что это, задал вопросы с вариантами и разложил задачи по спискам блоками времени.",
+        "wf_title": "Как работает скилл: от одной строки до плана",
+        "wf_desc": "Скинул материал; скилл понял, что это и сколько займёт, разбил на занятия, подобрал свободное время и разложил задачи по спискам.",
         "steps": [
             ("Скинул", ["Ссылка, файл, голос —", "без всякого формата"]),
-            ("Понял", ["Открыл ссылку, понял", "объём, нашёл дубли"]),
-            ("Спросил", ["1–3 вопроса —", "ответ в один клик"]),
-            ("Разложил", ["Блоки времени,", "списки, напоминания"]),
+            ("Разобрал", ["Понял объём и разбил", "на занятия по смыслу"]),
+            ("Подобрал", ["Свободные окна —", "ответ в один клик"]),
+            ("Разложил", ["Шаги по дням, списки,", "напоминания"]),
         ],
-        "bubbles": ["sqlbolt.com", "купить фильтр", "что на неделе?"],
-        "parsed": ("SQLBolt", "курс · 18 уроков", "≈ 4–5 часов", "дубля нет"),
+        "bubbles": ["курс испанского", "купить фильтр", "что на неделе?"],
+        "parsed": ("Испанский A1", "курс · 20 уроков", "≈ 7 часов", "5 занятий"),
         "options": ["План до срока", "До сб 31.10", "11:00–12:30"],
         "dest": "Учёба → Сейчас",
-        "plan": [("пн", "SQL 1–4"), ("чт", "SQL 5–8"), ("пн", "SQL 9–12")],
+        "plan": [("пн", "Уроки 1–4"), ("чт", "Уроки 5–8"), ("пн", "Уроки 9–12")],
         "map_title": "Одна карта на все агенты",
         "map_desc": "Claude Code, Codex, OpenCode и claude.ai читают одну карту аккаунта и работают с TickTick через официальный MCP-сервер.",
         "agents_note": ["~/.claude/skills", "~/.codex/skills", "читает ~/.claude/skills", "архив .skill + карта"],
@@ -51,29 +52,30 @@ TEXT = {
         "account": ("Твой TickTick", "списки · задачи · привычки"),
     },
     "en": {
-        "hero_title": "ticktick-routine — a skill that turns links and chores into a TickTick plan",
-        "hero_desc": "Left: the name and promise. Right: a message with a course link, two answers to the skill's questions and a week with new sessions placed around busy time.",
-        "promise": ["Drop a link or a chore —", "get a plan in TickTick"],
-        "sub": ["Asks the deadline and a convenient time, skips", "busy hours and files it into the right lists."],
-        "bubble": ("sqlbolt.com", " — to learn"),
+        "hero_title": "ticktick-routine — an assistant that breaks a task into steps and schedules them in your TickTick",
+        "hero_desc": "Left: the name and promise. Right: a short message about a Spanish course, the chosen deadline and time, and a week where the course is split into sessions around busy time.",
+        "promise": ["One line from you —", "a full plan in TickTick"],
+        "sub": ["Breaks the material into steps, finds free time", "in your week and files it into your lists."],
+        "bubble": ("Spanish course", " — to learn"),
+        "blocks": ["1–4", "5–8"],
         "chip1": ("Due", "Sat, Oct 31"),
         "chip2": ("Time", "11:00–12:30"),
         "days": ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
         "legend_new": "new sessions",
         "legend_busy": "already busy",
-        "wf_title": "How the skill works: four steps",
-        "wf_desc": "You drop material, the skill works out what it is, asks questions with options and files time-blocked tasks into your lists.",
+        "wf_title": "How the skill works: from one line to a plan",
+        "wf_desc": "You drop material; the skill works out what it is and how long it takes, splits it into sessions, finds free time and files the tasks into your lists.",
         "steps": [
             ("Drop", ["Link, file or voice —", "no format needed"]),
-            ("Read", ["Opens the link, sizes", "the work, finds dupes"]),
-            ("Ask", ["1–3 questions —", "one-click answers"]),
-            ("File", ["Time blocks, lists,", "reminders"]),
+            ("Break down", ["Sizes the work and", "splits it into steps"]),
+            ("Schedule", ["Finds free slots,", "you answer in one tap"]),
+            ("File", ["Steps by day, lists,", "reminders"]),
         ],
-        "bubbles": ["sqlbolt.com", "buy a filter", "what's this week?"],
-        "parsed": ("SQLBolt", "course · 18 lessons", "≈ 4–5 hours", "no duplicate"),
+        "bubbles": ["Spanish course", "buy a filter", "what's this week?"],
+        "parsed": ("Spanish A1", "course · 20 lessons", "≈ 7 hours", "5 sessions"),
         "options": ["Plan to deadline", "Due Sat, Oct 31", "11:00–12:30"],
         "dest": "Learning → Now",
-        "plan": [("Mo", "SQL 1–4"), ("Th", "SQL 5–8"), ("Mo", "SQL 9–12")],
+        "plan": [("Mo", "Lessons 1–4"), ("Th", "Lessons 5–8"), ("Mo", "Lessons 9–12")],
         "map_title": "One map for every agent",
         "map_desc": "Claude Code, Codex, OpenCode and claude.ai read one account map and work with TickTick through the official MCP server.",
         "agents_note": ["~/.claude/skills", "~/.codex/skills", "reads ~/.claude/skills", ".skill archive + map"],
@@ -159,8 +161,8 @@ def hero(L):
     out.append(block(1, 11, 12.5, "url(#busy)"))
     out.append(block(5, 11, 12.5, "url(#busy)"))
     out.append(block(2, 13, 14, "url(#busy)"))
-    out.append(block(0, 11, 12.5, BLUE, "SQL"))
-    out.append(block(3, 11, 12.5, BLUE, "SQL"))
+    out.append(block(0, 11, 12.5, BLUE, L["blocks"][0]))
+    out.append(block(3, 11, 12.5, BLUE, L["blocks"][1]))
     ly = 318
     out.append(f'<rect x="{gx}" y="{ly - 14}" width="18" height="18" rx="5" fill="{BLUE}"/>')
     out.append(t(gx + 28, ly, L["legend_new"], 17, MUTED))
@@ -265,7 +267,9 @@ def main():
         d = OUT if lang == "ru" else OUT / lang
         d.mkdir(parents=True, exist_ok=True)
         for name, fn in (("hero", hero), ("workflow", workflow), ("one-map", one_map)):
-            (d / f"{name}.svg").write_text(fn(L), encoding="utf-8")
+            # newline="\n" keeps the output byte-identical on Windows too.
+            with open(d / f"{name}.svg", "w", encoding="utf-8", newline="\n") as f:
+                f.write(fn(L))
             print(f"wrote {d / name}.svg")
 
 
