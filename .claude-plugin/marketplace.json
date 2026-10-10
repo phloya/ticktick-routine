@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "ticktick-routine",
-      "description": "Turns links, courses and chores into time-blocked TickTick plans via the official TickTick MCP.",
+      "description": "Personal planning assistant for TickTick: breaks a course, a book or a big task into steps and schedules them in your free time, via the official TickTick MCP.",
       "source": "./",
       "category": "productivity",
       "homepage": "https://github.com/phloya/ticktick-routine"

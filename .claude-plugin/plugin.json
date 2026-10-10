@@ -1,7 +1,7 @@
 {
   "name": "ticktick-routine",
-  "version": "1.0.0",
-  "description": "TickTick assistant: turns links, courses and chores into time-blocked TickTick plans. Asks the deadline and a convenient time, checks your schedule, reviews the week.",
+  "version": "1.0.1",
+  "description": "Personal planning assistant for TickTick: give it one line — a course, a book, a big task, chores — and it breaks it into steps, finds free time in your week and files a time-blocked plan. Also overviews, rescheduling and a weekly review.",
   "author": {
     "name": "Daler Khamidov",
     "url": "https://github.com/phloya"
